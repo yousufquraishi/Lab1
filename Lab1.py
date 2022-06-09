@@ -1,9 +1,11 @@
 #!usr/bin/env python3
 
 def get_age():
-    age = input("Age: ")
-    print("Age: ",age)
-
+    try:
+        age = int(input("Age: "))
+        print("Age: ",age)
+    except:
+        print("age is not integer")
 def helloWorld():
     print("hello world")
 
